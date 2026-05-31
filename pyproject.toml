@@ -1,0 +1,23 @@
+[project]
+name = "vpo"
+version = "0.1.0"
+description = "Vector Policy Optimization — drop-in replacement for GRPO advantage estimator"
+requires-python = ">=3.10"
+dependencies = ["torch", "numpy"]
+
+[project.optional-dependencies]
+dev = ["ruff", "mypy", "pre-commit", "pytest"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
