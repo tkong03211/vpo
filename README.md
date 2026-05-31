@@ -32,7 +32,7 @@ advantages = vpo_advantages(reward_vectors, VPOConfig(num_weight_samples=32))
 ```
 
 A diverse answer set earns a higher advantage than a collapsed one — see
-[`examples/minimal.py`](../examples/minimal.py).
+[`examples/minimal.py`](examples/minimal.py).
 
 ## ART integration
 
@@ -48,7 +48,7 @@ from vpo import VPOConfig, vpo_advantages
 advantages = vpo_advantages(reward_vectors, VPOConfig())            # (G,)
 ```
 
-Full before/after diff: [`examples/art_integration.py`](../examples/art_integration.py).
+Full before/after diff: [`examples/art_integration.py`](examples/art_integration.py).
 
 ## The math
 
@@ -69,18 +69,20 @@ $$\hat{R}(S^{(g)}) = \frac{1}{K}\sum_{k=1}^{K} \max_{y \in S^{(g)}} {w^{(k)}}^\t
 
 Advantages are then group-relative, exactly as in GRPO:
 
-$$A^{(g)} = \hat{R}(S^{(g)}) - \operatorname{mean}_g \hat{R}(S^{(g)})$$
+$$A^{(g)} = \hat{R}(S^{(g)}) - \mathrm{mean}_g\, \hat{R}(S^{(g)})$$
 
 optionally divided by the group standard deviation.
 
 ## Citation
 
 ```bibtex
-@article{bahlousboldi2026vpo,
-  title   = {Vector Policy Optimization},
-  author  = {Bahlous-Boldi and others},
-  journal = {arXiv preprint arXiv:2605.22817},
-  year    = {2026}
+@misc{bahlousboldi2026vpo,
+  title         = {Vector Policy Optimization},
+  author        = {Bahlous-Boldi and others},
+  year          = {2026},
+  eprint        = {2605.22817},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
 }
 ```
 
