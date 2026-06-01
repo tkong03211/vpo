@@ -3,6 +3,8 @@ name = "vpo"
 version = "0.1.0"
 description = "Vector Policy Optimization — drop-in replacement for GRPO advantage estimator"
 requires-python = ">=3.10"
+authors = [{ name = "tkong03211" }]
+license = { text = "MIT" }
 dependencies = ["torch", "numpy"]
 
 [project.optional-dependencies]

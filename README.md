@@ -1,5 +1,7 @@
 # VPO — Vector Policy Optimization
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A minimal, readable implementation of **Vector Policy Optimization**
 ([arXiv:2605.22817](https://arxiv.org/abs/2605.22817)), a drop-in replacement
 for GRPO's advantage estimator.
